@@ -5,11 +5,13 @@
 }
 
 nav {
+    font-family: 'Zilla Slab', serif;
     background-color:black;
     color: #2dc653;
     height:4rem;
     text-align: center;
     font-size: 25px;
+    width: auto;
 }
 img {
     float:left;
@@ -18,10 +20,12 @@ img {
     width: 250px;
 }
 h1 {
+    font-family: 'Zilla Slab', serif;
     padding-top:10px;
 }
 
 textarea {
+    font-family: 'Zilla Slab', serif;
     position: relative;
     left: 120px;
     margin: 17px;
@@ -42,15 +46,16 @@ button {
 }
 
 h2 {
+    font-family: 'Zilla Slab', serif;
     position: relative;
     left: 140px;
 }
 
 footer {
+    font-family: 'Zilla Slab', serif;
     background-color: black;
     color: #2dc653;
     text-align: center;
-    height: 3rem;
+    height: 4rem;
     padding-top: 10px;
-    
 }

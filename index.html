@@ -8,19 +8,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-        <h1>Groot talk</h1>
-    </nav>
+    <div class="container">
+        <nav>
+            <h1>Groot talk</h1>
+        </nav>
+    </div>
+    
     <img src="./images/groot.jpeg.jpg">    
-    <textarea placeholder="Type something here"></textarea>   
+    <textarea id="txt-input" 
+        placeholder="Type something here"></textarea>   
 
-    <button>translate</button>
+    <button id="btn-translate">translate</button>
 
-    <h2>Output👇</h2>
-    <textarea></textarea>
+    <h2>Output👇</h2>   
+    <div id="output">
+        <textarea></textarea>
+    </div>
+    
     <footer>
     <p>Walking, talking tree-like being, Groot is the best friend anyone could ever desire in the big, wide galaxy.</p>    
         &copy; copyright example corporation
     </footer>
+    <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
