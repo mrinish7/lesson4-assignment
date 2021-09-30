@@ -4,7 +4,6 @@ var outputDiv = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/groot.json"
 
-btnTranslate.addEventListener("click",clickHandler)
 
 function getTranslationURL(input) {
     return serverURL +"?"+"text=" + input
@@ -21,8 +20,14 @@ function clickHandler() {
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
     .then(json => {
+        console.log(json)
         var translatedText = json.contents.translated;
         outputDiv.innerText = translatedText;
+        // var translatedText = "HI";
+        outputDiv.value = translatedText;
     })
     .catch(errorHandler)
+    // outputDiv.value = inputText;
 };
+
+btnTranslate.addEventListener("click",clickHandler)
